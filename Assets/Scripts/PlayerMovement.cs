@@ -44,7 +44,6 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Shader.SetGlobalVector("_PlayerPostion", this.transform.position);
-        Shader.SetGlobalFloat("_InteractiveDistance", this.GetComponent<CapsuleCollider>().radius);
         // 1. 地面检测（每帧检测是否在地面）
         GroundCheck();
 
